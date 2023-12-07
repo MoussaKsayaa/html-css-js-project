@@ -48,13 +48,13 @@ colors.forEach((color) => {
 if (LS.getItem("random") === null) {
   LS.setItem("random", "yes");
   randomCheckBox.setAttribute("checked", "");
-  landingPage.style.backgroundImage = `url(./imgs/landing-img1.jpg)`;
+  landingPage.style.backgroundImage = `url(../imgs/landing-img1.jpg)`;
   setRandomVal();
 } else {
   //* set default values when the random value is yes in the local storage
   if (LS.getItem('random') === 'yes') {
     randomCheckBox.setAttribute('checked', '');
-    landingPage.style.backgroundImage = `url(./imgs/landing-img1.jpg)`;
+    landingPage.style.backgroundImage = `url(../imgs/landing-img1.jpg)`;
     setRandomVal();
   } else { //* set default values when the random value is no in the local storage
     randomCheckBox.removeAttribute('checked');
@@ -62,7 +62,7 @@ if (LS.getItem("random") === null) {
       if (e.dataset.img === LS.getItem('currentImg')) {
         imgElement.forEach(e => e.classList.remove('active'));
         e.classList.add('active');
-        landingPage.style.backgroundImage = `url(./imgs/landing-${e.dataset.img})`;
+        landingPage.style.backgroundImage = `url(../imgs/landing-${e.dataset.img})`;
       }
     })
   }
