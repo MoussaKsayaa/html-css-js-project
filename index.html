@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Design</title>
+  <!-- css files -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- font awesome files -->
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.min.css">
+  <!-- main css files -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Google fonts file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- start setting box -->
+  <div class="setting-box">
+    <div class="setting-icon">
+      <i class="fa-solid fa-gear"></i>
+    </div>
+    <div class="setting-options">
+        <h2>Setting</h2>
+        <div class="option colors">
+          <h4>colors</h4>
+          <ul class="colors">
+            <li data-color="#2196f3"></li>
+            <li data-color="#4caf50"></li>
+            <li data-color="#ff9800"></li>
+            <li data-color="#f44336"></li>
+            <li data-color="#e91e63"></li>
+          </ul>
+        </div>
+        <div class="option check randoms">
+          <label>Random Background:
+            <input type="checkbox" id="random-check" checked >
+            <div class="box"></div>
+          </label>
+          <ul class="select-img">
+            <li class="active" data-img="img1.jpg">1</li>
+            <li data-img="img2.jpg">2</li>
+            <li data-img="img3.jpg">3</li>
+            <li data-img="img4.jpg">4</li>
+            <li data-img="img5.jpg">5</li>
+          </ul>
+        </div>
+        <div class="option check bullets">
+          <label>Show Bullets
+            <input type="checkbox" id="random-check" checked >
+            <div class="box"></div>
+          </label>
+        </div>
+        <div class="option reset">
+          Reset Options
+        </div>
+    </div>
+  </div>
+  <!-- end setting box -->
+  <!-- start nav bullets -->
+  <div class="nav-bullets">
+    <div class="bullets">
+      <div class="bullet" data-position="about">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-position="skills">
+        <div class="tooltip">Our Skills</div>
+      </div>
+      <div class="bullet" data-position="our-gallery">
+        <div class="tooltip">Our Gallery</div>
+      </div>
+      <div class="bullet" data-position="timeline">
+        <div class="tooltip">Timeline</div>
+      </div>
+      <div class="bullet" data-position="features">
+        <div class="tooltip">Features</div>
+      </div>
+      <div class="bullet" data-position="testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+    </div>
+  </div>
+  <!-- end nav bullets -->
+  <!-- start landing page  -->
+  <div class="landing-page">
+    <div class="landing-overlay"></div>
+    <div class="container">
+      <div class="header">
+        <div class="logo">Special Site</div>
+        <div class="links">
+          <button type="button" class="mega-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav">
+            <li><a href="#" data-position="about">About</a></li>
+            <li><a href="#" data-position="skills">Skills</a></li>
+            <li><a href="#" data-position="our-gallery">Gallery</a></li>
+            <li><a href="#" data-position="timeline">Timeline</a></li>
+            <li><a href="#" data-position="features">Features</a></li>
+            <li><a href="#" data-position="testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="intro-text">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus! Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+  <!-- end landing page -->
+  <!-- start about section -->
+  <div class="container">
+    <div class="about-us" id="about">
+      <div class="info">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex consequatur blanditiis voluptatem ea sed? Consequatur ipsum tempora vero hic qui reprehenderit, dolore in quia accusamus? Eligendi error sapiente impedit quasi in quibusdam ducimus autem facilis excepturi at dicta fugiat commodi cum, aliquam nobis iusto tempore, nemo nisi obcaecati maiores!</p>
+      </div>
+      <div class="img">
+        <img src="./imgs/about-us.webp" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- end about section -->
+  <!-- start skills section -->
+  <div class="skills" id="skills">
+    <div class="container">
+      <div class="heading">Our Skills</div>
+      <div class="skill-box html">
+        <div class="skill-name">HTML</div>
+        <div class="skill-progress"><span data-width="90%"></span></div>
+      </div>
+      <div class="skill-box css">
+        <div class="skill-name">CSS</div>
+        <div class="skill-progress"><span data-width="80%"></span></div>
+      </div>
+      <div class="skill-box js">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-progress"><span data-width="75%"></span></div>
+      </div>
+    </div>
+  </div>
+  <!-- end skills section -->
+  <!-- start gallery section -->
+  <div class="our-gallery" id="our-gallery">
+    <div class="container">
+      <div class="heading">Our Gallery</div>
+      <div class="imgs-box">
+        <img src="./imgs/gallery-1.jpeg" alt="Image One">
+        <img src="./imgs/gallery-2.jpeg" alt="Image Two">
+        <img src="./imgs/gallery-3.jpeg" alt="Image Three">
+        <img src="./imgs/gallery-4.jpeg" alt="Image Four">
+        <img src="./imgs/gallery-5.jpeg" alt="Image Five">
+        <img src="./imgs/gallery-6.jpeg" alt="">
+        <img src="./imgs/gallery-7.jpeg" alt="">
+        <img src="./imgs/gallery-8.jpeg" alt="">
+        <img src="./imgs/gallery-9.jpeg" alt="">
+        <img src="./imgs/gallery-10.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- end gallery section -->
+  <!-- start timeline section -->
+  <div class="timeline" id="timeline">
+    <div class="container">
+      <div class="timeline-content">
+        <div class="time">2022</div>
+        <div class="left">
+          <div class="content">
+            <h2>Testing Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro laudantium minus eos minima! Cumque, nulla! Cupiditate tempora, deserunt vero illum provident commodi velit natus labore quam voluptate! Est, alias!</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="right">
+          <div class="content">
+            <h2>Testing Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro laudantium minus eos minima! Cumque, nulla! Cupiditate tempora, deserunt vero illum provident commodi velit natus labore quam voluptate! Est, alias!</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="time">2023</div>
+        <div class="left">
+          <div class="content">
+            <h2>Testing Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro laudantium minus eos minima! Cumque, nulla! Cupiditate tempora, deserunt vero illum provident commodi velit natus labore quam voluptate! Est, alias!</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="left">
+          <div class="content">
+            <h2>Testing Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro laudantium minus eos minima! Cumque, nulla! Cupiditate tempora, deserunt vero illum provident commodi velit natus labore quam voluptate! Est, alias!</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="right">
+          <div class="content">
+            <h2>Testing Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro laudantium minus eos minima! Cumque, nulla! Cupiditate tempora, deserunt vero illum provident commodi velit natus labore quam voluptate! Est, alias!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end timeline section -->
+  <!-- start our features -->
+  <div class="our-features" id="features">
+    <h2 class="heading">Our Features</h2>
+    <div class="container">
+      <div class="features-box">
+        <img src="./imgs/Icon_01.png" alt="">
+        <h4>Heading Test</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consequatur!</p>
+      </div>
+      <div class="features-box">
+        <img src="./imgs/Icon_02.png" alt="">
+        <h4>Heading Test</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consequatur!</p>
+      </div>
+      <div class="features-box">
+        <img src="./imgs/Icon_03.png" alt="">
+        <h4>Heading Test</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consequatur!</p>
+      </div>
+      <div class="features-box">
+        <img src="./imgs/Icon_04.png" alt="">
+        <h4>Heading Test</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consequatur!</p>
+      </div>
+      <div class="features-box">
+        <img src="./imgs/Icon_05.png" alt="">
+        <h4>Heading Test</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consequatur!</p>
+      </div>
+      <div class="features-box">
+        <img src="./imgs/Icon_06.png" alt="">
+        <h4>Heading Test</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consequatur!</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- end our features -->
+  <!-- start testimonials section -->
+  <div class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="heading">Testimonials</h2>
+      <div class="ts-box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <img src="https://placehold.it/80/ccc" alt="">
+        <h4>Name Test</h4>
+        <span>CEO At Company</span>
+      </div>
+      <div class="ts-box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <img src="https://placehold.it/80/eee" alt="">
+        <h4>Name Test</h4>
+        <span>CEO At Company</span>
+      </div>
+      <div class="ts-box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <img src="https://placehold.it/80/aaa" alt="">
+        <h4>Name Test</h4>
+        <span>CEO At Company</span>
+      </div>
+    </div>
+  </div>
+  <!-- end testimonials section -->
+  <!-- start contact section -->
+  <div class="contact">
+    <div class="overlay"></div>
+    <div class="container">
+      <h2 class="heading">Contact Us</h2>
+      <form action="">
+        <div class="left">
+          <input type="text" name="username" placeholder="Your Name">
+          <input type="text" name="phone" placeholder="Your Phone">
+          <input type="text" name="email" placeholder="Your Email">
+          <input type="text" name="subject" placeholder="Subject">
+        </div>
+        <div class="right">
+          <textarea type="text" name="message" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- end contact section -->
+  <!-- start footer section -->
+  <div class="footer">Created With Love By Moussa Ksayaa</div>
+  <!-- end footer section -->
+  <!-- js files -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
